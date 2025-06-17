@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zetta Motors | Cars</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="logo.png" alt="Zetta Logo" class="logo" />
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="content">
+    <h1>Explore the Zetta Range</h1>
+    <p>Each Zetta model is engineered with purpose. Whether you're seeking luxury, utility, or affordability. Dive into our lineup and discover what makes each vehicle unique.</p>
+  </section>
+
+  <section class="car-detail">
+    <div class="car-entry">
+      <img src="SUV.jpg" alt="Zetta Alpha SUV">
+      <div class="car-info">
+        <h2>Zetta Alpha</h2>
+        <h4>Smart Electric SUV</h4>
+        <p>The Zetta Alpha is designed for families and adventurers alike. Built as a high-performance electric SUV, it offers spacious seating, enhanced cargo capacity, and intuitive AI driving features.</p>
+        <ul>
+          <li>Dual-motor all-wheel drive</li>
+          <li>500km+ electric range</li>
+          <li>Advanced lane assist and self-parking</li>
+          <li>Touchscreen HUD with smart assistant</li>
+          <li>Built-in solar roof for passive charging</li>
+        </ul>
+		  <p>Disclaimer: Attachments seen on this photo is sold seperately.</p>
+      </div>
+    </div>
+
+    <div class="car-entry reverse">
+      <img src="Supercar.jpg" alt="Zetta X Supercar">
+      <div class="car-info">
+        <h2>Zetta X</h2>
+        <h4>Electric Supercar</h4>
+        <p>The Zetta X delivers pure adrenaline. A true electric supercar with a carbon-fiber body, cutting-edge aerodynamics, and track-ready performance, it redefines what electric speed means.</p>
+        <ul>
+          <li>0–100km/h in under 2.8 seconds</li>
+          <li>700+ horsepower electric drivetrain</li>
+          <li>Active air suspension and adaptive dynamics</li>
+          <li>Wireless racing telemetry system</li>
+          <li>Signature "Zetta Glow" LED light system (Inside the car)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="car-entry">
+      <img src="Budget.jpg" alt="Zetta GT Budget Car">
+      <div class="car-info">
+        <h2>Zetta GT</h2>
+        <h4>Everyday Budget Electric</h4>
+        <p>Affordable, reliable, and surprisingly fun. The Zetta GT is made for everyday drivers who want all the benefits of electric driving without breaking the bank. Compact, efficient, and easy to maintain.</p>
+        <ul>
+          <li>350km electric range</li>
+          <li>Affordable pricing at $30,000</li>
+          <li>Smart charging with home plug compatibility</li>
+          <li>Compact design perfect for city and off-road driving</li>
+          <li>Minimalist but modern digital interior</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+		<script>
+  window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    const logo = document.querySelector('.logo');
+
+    if (window.scrollY > 100) {
+      header.classList.add('shrink');
+      logo.classList.add('shrink-logo');
+    } else {
+      header.classList.remove('shrink');
+      logo.classList.remove('shrink-logo');
+    }
+  });
+</script>
+	<footer class="footer">
+  <div class="footer-content">
+	  <img src="Logo.png" alt="Zetta Logo" class="footer-logo" />
+    <p>&copy; 2025 Zetta Motors. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="cars.html">Cars</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zetta Motors | About</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="about">
+  <header>
+    <nav>
+      <img src="logo.png" alt="Zetta Logo" class="logo" />
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="content">
+    <h1>About Zetta</h1>
+    <p><strong>Founded in 2016</strong>, Zetta began with a bold vision: to reshape the future of mobility through cutting-edge automotive innovation. The name "Zetta" symbolizes the highest measurable capacity — a nod to our mission to push boundaries in technology, design, and performance.</p>
+
+    <h2>Why Zetta?</h2>
+    <p>Unlike traditional car manufacturers, Zetta was born in the digital age. Our goal is to create vehicles that are not only smarter, safer, and more sustainable, but also exciting to drive. Every Zetta car is engineered with precision, crafted with care, and designed to leave a minimal environmental footprint.</p>
+
+    <h2>Our Journey</h2>
+    <ul class="timeline">
+      <li><strong>2016:</strong> Zetta founded by a team of engineers, designers, and tech innovators in Melbourne, Australia.</li>
+      <li><strong>2018:</strong> Launch of the first prototype: the Zetta Alpha, a fully electric city car with autonomous driving support.</li>
+      <li><strong>2020:</strong> Zetta X introduced, combining SUV versatility with electric power.</li>
+      <li><strong>2023:</strong> Zetta GT unveiled, redefining high-performance with sustainable engineering.</li>
+    </ul>
+
+    <h2>What We Stand For</h2>
+    <p><strong>Innovation:</strong> We integrate AI, smart connectivity, and next-gen EV technology into every model.</p>
+    <p><strong>Sustainability:</strong> All Zetta vehicles are built in carbon-neutral factories using recyclable materials and eco-friendly manufacturing practices.</p>
+    <p><strong>Customer First:</strong> We believe your car should adapt to your lifestyle, not the other way around. That’s why we prioritize intuitive design, safety, and long-term support.</p>
+
+    <h2>Driven by the Future</h2>
+    <p>Zetta isn’t just a car brand, it’s a movement. A movement toward cleaner cities, safer roads, and smarter mobility. As we grow, so does our commitment to reshaping the way the world drives.</p>
+  </section>
+		<script>
+  window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    const logo = document.querySelector('.logo');
+
+    if (window.scrollY > 100) {
+      header.classList.add('shrink');
+      logo.classList.add('shrink-logo');
+    } else {
+      header.classList.remove('shrink');
+      logo.classList.remove('shrink-logo');
+    }
+  });
+</script>
+	<footer class="footer">
+  <div class="footer-content">
+	  <img src="Logo.png" alt="Zetta Logo" class="footer-logo" />
+    <p>&copy; 2025 Zetta Motors. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="cars.html">Cars</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

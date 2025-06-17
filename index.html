@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zetta Motors | Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="index">
+  <header>
+    <nav>
+      <img src="logo.png" alt="Zetta Logo" class="logo" />
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to Zetta!</h1>
+      <p>Revolutionising the drive of tomorrow.</p>
+      <a href="#car-range" class="btn">Discover the Range</a>
+    </div>
+  </section>
+
+  <section id="car-range" class="car-showcase">
+    <h2>Our Cars</h2>
+    <div class="car-gallery">
+      <div class="car-card">
+        <img src="SUV.jpg" alt="Zetta Alpha" />
+        <h3>Zetta Alpha</h3>
+        <p>Our electric SUV for family adventures!</p>
+      </div>
+      <div class="car-card">
+        <img src="Supercar.jpg" alt="Zetta X" />
+        <h3>Zetta X</h3>
+        <p>Our car that's made for adrenaline!</p>
+      </div>
+      <div class="car-card">
+        <img src="Budget.jpg" alt="Zetta GT" />
+        <h3>Zetta GT</h3>
+        <p>Affordable, but surprisingly fun!</p>
+      </div>
+    </div>
+  </section>
+	<script>
+  window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    const logo = document.querySelector('.logo');
+
+    if (window.scrollY > 100) {
+      header.classList.add('shrink');
+      logo.classList.add('shrink-logo');
+    } else {
+      header.classList.remove('shrink');
+      logo.classList.remove('shrink-logo');
+    }
+  });
+</script>
+	<footer class="footer">
+  <div class="footer-content">
+	  <img src="Logo.png" alt="Zetta Logo" class="footer-logo" />
+    <p>&copy; 2025 Zetta Motors. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="cars.html">Cars</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
